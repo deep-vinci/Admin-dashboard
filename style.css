@@ -110,6 +110,8 @@ a {
     grid-template-rows: 1fr 1fr;
     position: sticky;
     height: 200px;
+    box-shadow: 2px 2px 10px rgb(204, 204, 204);
+
     /* position: sticky; */
     /* column-gap: 10px; */
 }
