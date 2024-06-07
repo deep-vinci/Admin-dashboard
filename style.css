@@ -213,7 +213,7 @@ a {
 }
 
 .project {
-    border-left: yellow solid 8px;
+    border-left: #fbbf24 solid 8px;
     border-radius: 10px;
     padding: 30px;
     background-color: white;
