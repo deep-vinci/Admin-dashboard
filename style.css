@@ -110,7 +110,7 @@ a {
     grid-template-rows: 1fr 1fr;
     position: sticky;
     height: 200px;
-    
+    /* position: sticky; */
     /* column-gap: 10px; */
 }
 
@@ -227,9 +227,6 @@ a {
     
 }
 
-.announcements div:nth-child(2) {
-    padding: ;
-}
 .announcement-card {
     background-color: white;
     border-radius: 10px;
