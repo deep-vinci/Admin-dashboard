@@ -37,13 +37,16 @@
     width: 100vw;
     grid-template-columns: repeat(1, 350px) repeat(1, auto);
     grid-template-rows: 100vh;
+    overflow-x: hidden;
 }
 
 .sidebar {
     background-color: #0ea5e9;
     font-family: Roboto;
     font-weight: 500;
-
+    height: 100vh;
+    width: 350px;
+    position: fixed;
 }
 
 a {
@@ -105,6 +108,7 @@ a {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    position: sticky;
     /* column-gap: 10px; */
 }
 
@@ -125,7 +129,13 @@ a {
 }
 
 .info-page {
+    padding: 35px;
     background-color: #e2e8f0;
+}
+
+.header {
+    /* padding: 0 0 0 40px; */
+
 }
 
 .user-card {
@@ -186,14 +196,15 @@ a {
 .info-page {
     display: grid;
     grid-template-columns: 2.4fr 1fr;
-    grid-template-rows: 30px auto;
+    grid-template-rows: 40px auto;
 }
+
 
 
 .your-projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 40px;
+    margin: 0 40px 0 0;
     gap: 40px;
 }
 
@@ -204,19 +215,24 @@ a {
     background-color: white;
     display: grid;
     grid-template-rows: 50px 50px;
+    box-shadow: 2px 2px 7px rgb(204, 204, 204);
 }
 .announcements {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    margin: 40px 40px 40px 0;
-    gap: 40px;
+    grid-template-rows: 1fr 60px 1fr;
+    
 }
 
+.announcements div:nth-child(2) {
+    margin-top: 20px;
+}
 .announcement-card {
     background-color: white;
     border-radius: 10px;
     padding: 10px 30px 10px 30px ;
+    box-shadow: 2px 2px 7px rgb(204, 204, 204);
+
 }
 
 .announcement-card p {
@@ -235,6 +251,7 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     gap: 20px;
+    box-shadow: 2px 2px 7px rgb(204, 204, 204);
 }
 
 .trend-user {
